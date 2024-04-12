@@ -34,8 +34,6 @@ Config.Zones = {
     [7] = { coords = vector3(-1203.86, -895.91, 14.5), radius = 1.15, icon = "fa-solid fa-square-up-right", event = "randol_burgershot:client:jobFridge", label = "Fridge", job = "burgershot" },
     [8] = { coords = vector3(-1197.66, -894.32, 14.15), radius = 1.0, icon = "far fa-clipboard", event = "randol_burgershot:client:passThrough", label = "Big Tray", job = "burgershot" },
     [9] = { coords = vector3(-1193.39, -897.94, 14.55), radius = 0.6, icon = "fa-solid fa-clock", event = "randol_burgershot:clientToggleDuty", label = "Clock In/Out", job = "burgershot" },
-    [10] = { coords = vector3(-1194.71, -893.25, 14.0), radius = 0.5, icon = "fa-brands fa-cc-visa", event = "randol_burgershot:bill", label = "Bill Customer", job = "burgershot" },
-    [11] = { coords = vector3(-1195.98, -891.22, 14.0), radius = 0.45, icon = "fa-brands fa-cc-visa", event = "randol_burgershot:bill", label = "Bill Customer", job = "burgershot" }, 
     [12] = { coords = vector3(-1195.31, -892.2, 13.65), radius = 0.8, icon = "far fa-clipboard", event = "randol_burgershot:client:frontTray2", label = "Counter", },    
 }
 
