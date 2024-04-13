@@ -51,7 +51,7 @@ end
 function BurgerZones()
     for k, v in pairs(Config.Zones) do
         exports['qb-target']:AddCircleZone("burgershot"..k, v.coords, v.radius, {
-            name = "burgershot"..k,
+            name = "inuit_burger"..k,
             debugPoly = false,
             useZ=true,
         }, {
@@ -81,56 +81,56 @@ function BurgerZones()
 	loadAnimDict("amb@world_human_leaning@female@wall@back@holding_elbow@idle_a")        
 	TaskPlayAnim(jobPed, "amb@world_human_leaning@female@wall@back@holding_elbow@idle_a", "idle_a", 8.0, 1.0, -1, 01, 0, 0, 0, 0)
 
-	exports['qb-target']:AddTargetEntity(jobPed, { 
-	    options = {
-		{ 
-		    type = "client",
-		    event = "randol_burgershot:client:jobGarage",
-		    icon = "fa-solid fa-clipboard-check",
-		    label = "Garage",
-		    job = "burgershot"
-		},
-		{ 
-		    type = "client",
-		    event = "randol_burgershot:client:storeGarage",
-		    icon = "fa-solid fa-clipboard-check",
-		    label = "Store Vehicle",
-		    job = "burgershot"
-		},
-	    }, 
-	    distance = 1.5, 
-	})
+	-- exports['qb-target']:AddTargetEntity(jobPed, { 
+	--     options = {
+	-- 	{ 
+	-- 	    type = "client",
+	-- 	    event = "randol_burgershot:client:jobGarage",
+	-- 	    icon = "fa-solid fa-clipboard-check",
+	-- 	    label = "Garage",
+	-- 	    job = "burgershot"
+	-- 	},
+	-- 	{ 
+	-- 	    type = "client",
+	-- 	    event = "randol_burgershot:client:storeGarage",
+	-- 	    icon = "fa-solid fa-clipboard-check",
+	-- 	    label = "Store Vehicle",
+	-- 	    job = "burgershot"
+	-- 	},
+	--     }, 
+	--     distance = 1.5, 
+	-- })
     end
 end
 
-CreateThread(function()
-    DecorRegister("bs_vehicle", 1)
-end)
+-- CreateThread(function()
+--     DecorRegister("bs_vehicle", 1)
+-- end)
 
-RegisterNetEvent('randol_burgershot:client:jobGarage', function(vehicle)
-    local vehicle = Config.Vehicle
-    local coords = Config.VehicleSpawn
-    QBCore.Functions.SpawnVehicle(vehicle, function(veh)
-        SetVehicleNumberPlateText(veh, "BURG"..tostring(math.random(1000, 9999)))
-        DecorSetFloat(veh, "bs_vehicle", 1)
-        SetEntityAsMissionEntity(veh, true, true)
-        TaskWarpPedIntoVehicle(PlayerPedId(), veh, -1)
-        TriggerEvent("vehiclekeys:client:SetOwner", QBCore.Functions.GetPlate(veh))
-        SetVehicleEngineOn(veh, true, true)
-        CurrentPlate = QBCore.Functions.GetPlate(veh)
-        SetVehicleFuelLevel(veh, 100.0)
-    end, coords, true)
-end)
+-- RegisterNetEvent('randol_burgershot:client:jobGarage', function(vehicle)
+--     local vehicle = Config.Vehicle
+--     local coords = Config.VehicleSpawn
+--     QBCore.Functions.SpawnVehicle(vehicle, function(veh)
+--         SetVehicleNumberPlateText(veh, "BURG"..tostring(math.random(1000, 9999)))
+--         DecorSetFloat(veh, "bs_vehicle", 1)
+--         SetEntityAsMissionEntity(veh, true, true)
+--         TaskWarpPedIntoVehicle(PlayerPedId(), veh, -1)
+--         TriggerEvent("vehiclekeys:client:SetOwner", QBCore.Functions.GetPlate(veh))
+--         SetVehicleEngineOn(veh, true, true)
+--         CurrentPlate = QBCore.Functions.GetPlate(veh)
+--         SetVehicleFuelLevel(veh, 100.0)
+--     end, coords, true)
+-- end)
 
-RegisterNetEvent('randol_burgershot:client:storeGarage', function()
-    local veh = QBCore.Functions.GetClosestVehicle()
-    if DecorExistOn((veh), "bs_vehicle") then
-        QBCore.Functions.DeleteVehicle(veh)
-        QBCore.Functions.Notify("You returned the vehicle.", "success")
-    else
-        QBCore.Functions.Notify("This is not a work vehicle.", "error")
-    end
-end)
+-- RegisterNetEvent('randol_burgershot:client:storeGarage', function()
+--     local veh = QBCore.Functions.GetClosestVehicle()
+--     if DecorExistOn((veh), "bs_vehicle") then
+--         QBCore.Functions.DeleteVehicle(veh)
+--         QBCore.Functions.Notify("You returned the vehicle.", "success")
+--     else
+--         QBCore.Functions.Notify("This is not a work vehicle.", "error")
+--     end
+-- end)
     
 RegisterNetEvent("randol_burgershot:client:frontTray", function()
     TriggerEvent("inventory:client:SetCurrentStash", "bsfoodtray")

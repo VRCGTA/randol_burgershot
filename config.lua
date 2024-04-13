@@ -11,17 +11,17 @@ Config.VehicleSpawn = vector4(-1170.48, -892.93, 13.93, 27.23)
 Config.Vehicle = 'rumpo2'
 
 HungerFill = { -- How much they fill your hunger
-    ["burger-bleeder"] = math.random(35, 45),
-    ["burger-moneyshot"] = math.random(35, 45),
-    ["burger-torpedo"] = math.random(35, 45),
-    ["burger-heartstopper"] = math.random(35, 45),
-    ["burger-meatfree"] = math.random(20, 35),
-    ["burger-fries"] = math.random(20, 35),
+    ["burger-bleeder"] = 35,
+    ["burger-moneyshot"] = 40,
+    ["burger-torpedo"] = 30,
+    ["burger-heartstopper"] = 45,
+    ["burger-meatfree"] = 30,
+    ["burger-fries"] = 20,
 }
 
 ThirstFill = { -- How much they fill your thirst.
-    ["burger-softdrink"] = math.random(25, 35),
-    ["burger-mshake"] = math.random(25, 35),
+    ["burger-softdrink"] = 20,
+    ["burger-mshake"] = 20,
 }
 
 Config.Zones = {

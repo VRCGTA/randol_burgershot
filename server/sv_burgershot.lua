@@ -50,22 +50,22 @@ end)
 RegisterNetEvent('randol_burgershot:server:makeFries', function()
     local Player = QBCore.Functions.GetPlayer(source)
     if not Player then return end
-    Player.Functions.RemoveItem("burger-potato", 2)
-    Player.Functions.AddItem("burger-fries", 4)
+    Player.Functions.RemoveItem("burger-potato", 3)
+    Player.Functions.AddItem("burger-fries", 3)
 end)
 
 RegisterNetEvent('randol_burgershot:server:makeSoda', function()
     local Player = QBCore.Functions.GetPlayer(source)
     if not Player then return end
-    Player.Functions.RemoveItem("burger-sodasyrup", 1)
-    Player.Functions.AddItem("burger-softdrink", 1)
+    Player.Functions.RemoveItem("burger-sodasyrup", 3)
+    Player.Functions.AddItem("burger-softdrink", 3)
 end)
 
 RegisterNetEvent('randol_burgershot:server:makeShake', function()
     local Player = QBCore.Functions.GetPlayer(source)
     if not Player then return end
-    Player.Functions.RemoveItem("burger-mshakeformula", 1)
-    Player.Functions.AddItem("burger-mshake", 1)
+    Player.Functions.RemoveItem("burger-mshakeformula", 3)
+    Player.Functions.AddItem("burger-mshake", 3)
 end)
 
 QBCore.Functions.CreateUseableItem("burger-softdrink", function(source, item)
