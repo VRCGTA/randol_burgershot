@@ -37,7 +37,7 @@ Config.Zones = {
     [10] = { coords = vector3(-1200.17, -902.28, 13.89), radius = 0.75, icon = "fa-solid fa-briefcase", event = "qb-bossmenu:client:OpenMenu", label = "Manage Business", job = {['burgershot'] = 4} },
     [11] = { coords = vector3(-1202.27, -897.44, 13.89), radius = 1.15, icon = "fa-solid fa-square-up-right", event = "randol_burgershot:client:jobFridge", label = "Fridge", job = "burgershot" },
     [12] = { coords = vector3(-1195.67, -895.73, 13.89), radius = 1.0, icon = "far fa-clipboard", event = "randol_burgershot:client:passThrough", label = "Big Tray", job = "burgershot" },
-    [13] = { coords = vector3(-1193.39, -897.94, 14.55), radius = 0.6, icon = "fa-solid fa-clock", event = "randol_burgershot:clientToggleDuty", label = "Clock In/Out", job = "burgershot" },
+    [13] = { coords = vector3(-1199.83, -899.36, 13.89), radius = 0.6, icon = "fa-solid fa-clock", event = "randol_burgershot:clientToggleDuty", label = "Clock In/Out", job = "burgershot" },
 }
 
 Config.Items = {
