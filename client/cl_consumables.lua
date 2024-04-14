@@ -183,7 +183,7 @@ RegisterNetEvent('randol_burgershot:client:makeTorpedo', function()
 end)
 
 RegisterNetEvent('randol_burgershot:client:makeFries', function()
-	local ingredients = QBCore.Functions.HasItem("burger-potato", 2)
+	local ingredients = QBCore.Functions.HasItem("burger-potato", 1)
     if ingredients then
         TriggerEvent('animations:client:EmoteCommandStart', {"fbbq"})
         TriggerServerEvent("InteractSound_SV:PlayWithinDistance", 20.0, "deepfry", 0.02)
@@ -201,7 +201,7 @@ RegisterNetEvent('randol_burgershot:client:makeFries', function()
             QBCore.Functions.Notify("You changed your mind.", "error")
         end)
     else		
-        QBCore.Functions.Notify('You need 2 sacks of Potatos..', 'error')
+        QBCore.Functions.Notify('You need 1 sacks of Potatos..', 'error')
     end
 end)
 
