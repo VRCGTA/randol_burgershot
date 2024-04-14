@@ -25,19 +25,19 @@ ThirstFill = { -- How much they fill your thirst.
 }
 
 Config.Zones = {
-    [1] = { coords = vector3(1190.83, -894.42, 15.20), radius = 0.5, icon = "far fa-clipboard", event = "randol_burgershot:client:frontTray", label = "Food Tray 1", },
-    [2] = { coords = vector3(-1192.82, -893.90, 15.00), radius = 0.5, icon = "far fa-clipboard", event = "randol_burgershot:client:frontTray2", label = "Food Tray 2", },
-    [3] = { coords = vector3(-1194.82, -893.38, 15.00), radius = 0.5, icon = "far fa-clipboard", event = "randol_burgershot:client:frontTray3", label = "Food Tray 3", },
-    [4] = { coords = vector3(-1196.87, -892.81, 15.08), radius = 0.5, icon = "far fa-clipboard", event = "randol_burgershot:client:frontTray4", label = "Food Tray 4", },
+    [1] = { coords = vector3(-1190.84, -894.46, 14.00), radius = 0.5, icon = "far fa-clipboard", event = "randol_burgershot:client:frontTray", label = "Food Tray 1", },
+    [2] = { coords = vector3(-1192.82, -893.90, 14.00), radius = 0.5, icon = "far fa-clipboard", event = "randol_burgershot:client:frontTray2", label = "Food Tray 2", },
+    [3] = { coords = vector3(-1194.82, -893.38, 14.00), radius = 0.5, icon = "far fa-clipboard", event = "randol_burgershot:client:frontTray3", label = "Food Tray 3", },
+    [4] = { coords = vector3(-1196.87, -892.81, 14.00), radius = 0.5, icon = "far fa-clipboard", event = "randol_burgershot:client:frontTray4", label = "Food Tray 4", },
     [5] = { coords = vector3(-1191.59, -898.71, 13.89), radius = 0.9, icon = "fa-solid fa-beer-mug-empty", event = "randol_burgershot:client:drinkStation", label = "Make Drinks", job = "burgershot" },
-    [6] = { coords = vector3(-1191.59, -898.71, 13.89), radius = 0.9, icon = "fa-solid fa-beer-mug-empty", event = "randol_burgershot:client:shakeStation", label = "Make Shakes", job = "burgershot" }, 
-    [7] = { coords = vector3(-1194.75, -897.68, 14.93), radius = 0.9, icon = "fa-solid fa-burger", event = "randol_burgershot:client:cookBurgers", label = "Make Burgers", job = "burgershot" }, 
+    [6] = { coords = vector3(-1199.54, -896.75, 13.89), radius = 0.9, icon = "fa-solid fa-beer-mug-empty", event = "randol_burgershot:client:shakeStation", label = "Make Shakes", job = "burgershot" }, 
+    [7] = { coords = vector3(-1194.75, -897.68, 13.89), radius = 0.9, icon = "fa-solid fa-burger", event = "randol_burgershot:client:cookBurgers", label = "Make Burgers", job = "burgershot" }, 
     [8] = { coords = vector3(-1195.96, -899.33, 13.89), radius = 1.55, icon = "fa-solid fa-fire-burner", event = "randol_burgershot:client:makeFries", label = "Make Fries", job = "burgershot" },
-    [9] = { coords = vector3(-1196.57, -901.39, 13.89), radius = 1.35, icon = "fa-solid fa-box-open", event = "randol_burgershot:client:ingredientStore", label = "Ingredients", job = "burgershot" },
-    [10] = { coords = vector3(-1200.17, -902.28, 13.89), radius = 0.75, icon = "fa-solid fa-briefcase", event = "qb-bossmenu:client:OpenMenu", label = "Manage Business", job = {['burgershot'] = 4} },
-    [11] = { coords = vector3(-1202.27, -897.44, 13.89), radius = 1.15, icon = "fa-solid fa-square-up-right", event = "randol_burgershot:client:jobFridge", label = "Fridge", job = "burgershot" },
-    [12] = { coords = vector3(-1195.67, -895.73, 13.89), radius = 1.0, icon = "far fa-clipboard", event = "randol_burgershot:client:passThrough", label = "Big Tray", job = "burgershot" },
-    [13] = { coords = vector3(-1199.83, -899.36, 13.89), radius = 0.6, icon = "fa-solid fa-clock", event = "randol_burgershot:clientToggleDuty", label = "Clock In/Out", job = "burgershot" },
+    [9] = { coords = vector3(-1196.57, -901.39, 14.39), radius = 0.5, icon = "fa-solid fa-box-open", event = "randol_burgershot:client:ingredientStore", label = "Ingredients", job = "burgershot" },
+    [10] = { coords = vector3(-1200.17, -902.28, 14.39), radius = 0.75, icon = "fa-solid fa-briefcase", event = "qb-bossmenu:client:OpenMenu", label = "Manage Business", job = {['burgershot'] = 4} },
+    [11] = { coords = vector3(-1202.27, -897.44, 14.39), radius = 1.15, icon = "fa-solid fa-square-up-right", event = "randol_burgershot:client:jobFridge", label = "Fridge", job = "burgershot" },
+    [12] = { coords = vector3(-1195.67, -895.73, 14.00), radius = 1.0, icon = "far fa-clipboard", event = "randol_burgershot:client:passThrough", label = "Big Tray", job = "burgershot" },
+    [13] = { coords = vector3(-1199.83, -899.36, 14.39), radius = 0.6, icon = "fa-solid fa-clock", event = "randol_burgershot:clientToggleDuty", label = "Clock In/Out", job = "burgershot" },
 }
 
 Config.Items = {

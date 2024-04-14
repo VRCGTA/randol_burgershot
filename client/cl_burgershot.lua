@@ -9,7 +9,7 @@ CreateThread(function()
     SetBlipAsShortRange(BurgerShot, true)
     SetBlipColour(BurgerShot, 75)
     BeginTextCommandSetBlipName("STRING")
-    AddTextComponentSubstringPlayerName("BurgerShot")
+    AddTextComponentSubstringPlayerName("InuitBurger")
     EndTextCommandSetBlipName(BurgerShot)
 end) 
 

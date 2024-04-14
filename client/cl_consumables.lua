@@ -257,8 +257,8 @@ RegisterNetEvent('randol_burgershot:closemenu', function()
 end)
 
 RegisterNetEvent('randol_burgershot:client:cookBurgers', function()
-    SetEntityCoords(PlayerPedId(), -1199.92, -900.49, 13.0)
-    SetEntityHeading(PlayerPedId(), 125.3)
+    SetEntityCoords(PlayerPedId(), -1194.82, -898.39, 13.00)
+    SetEntityHeading(PlayerPedId(), 350.49)
     exports['qb-menu']:openMenu({
         {
             header = "Burgershot Stove",
@@ -316,8 +316,8 @@ RegisterNetEvent('randol_burgershot:client:cookBurgers', function()
 end)
 
 RegisterNetEvent('randol_burgershot:client:drinkStation', function()
-    SetEntityCoords(PlayerPedId(), -1191.59, -898.71, 13.89)
-    SetEntityHeading(PlayerPedId(), 125.79)
+    SetEntityCoords(PlayerPedId(), -1191.59, -898.71, 13.0)
+    SetEntityHeading(PlayerPedId(), 231.66)
     exports['qb-menu']:openMenu({
         {
             header = "Drink Station",
@@ -343,8 +343,8 @@ RegisterNetEvent('randol_burgershot:client:drinkStation', function()
 end)
 
 RegisterNetEvent('randol_burgershot:client:shakeStation', function()
-    SetEntityCoords(PlayerPedId(), -1199.54, -896.75, 13.89)
-    SetEntityHeading(PlayerPedId(), 125.79)
+    SetEntityCoords(PlayerPedId(), -1199.54, -896.75, 13.0)
+    SetEntityHeading(PlayerPedId(), 31.96)
     exports['qb-menu']:openMenu({
         {
             header = "Shake Station",
