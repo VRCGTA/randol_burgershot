@@ -148,6 +148,22 @@ RegisterNetEvent("randol_burgershot:client:frontTray2", function()
     })
 end)
 
+RegisterNetEvent("randol_burgershot:client:frontTray3", function()
+    TriggerEvent("inventory:client:SetCurrentStash", "bsfoodtray3")
+    TriggerServerEvent("inventory:server:OpenInventory", "stash", "bsfoodtray3", {
+        maxweight = 30000,
+        slots = 12,
+    })
+end)
+
+RegisterNetEvent("randol_burgershot:client:frontTray4", function()
+    TriggerEvent("inventory:client:SetCurrentStash", "bsfoodtray4")
+    TriggerServerEvent("inventory:server:OpenInventory", "stash", "bsfoodtray4", {
+        maxweight = 30000,
+        slots = 12,
+    })
+end)
+
 RegisterNetEvent("randol_burgershot:client:passThrough", function()
     TriggerEvent("inventory:client:SetCurrentStash", "bsBigTray")
     TriggerServerEvent("inventory:server:OpenInventory", "stash", "bsBigTray", {
