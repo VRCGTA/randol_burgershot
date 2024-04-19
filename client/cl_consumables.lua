@@ -19,7 +19,7 @@ RegisterNetEvent('randol_burgershot:client:Eat', function(itemName)
         else
             TriggerServerEvent("QBCore:Server:SetMetaData", "hunger", QBCore.Functions.GetPlayerData().metadata["hunger"] + HungerFill[itemName])
         end
-        TriggerServerEvent('hud:server:RelieveStress', math.random(5, 8))
+        -- TriggerServerEvent('hud:server:RelieveStress', math.random(5, 8))
     end)
 end)
 
@@ -38,7 +38,7 @@ RegisterNetEvent('randol_burgershot:client:Drink', function(itemName)
         else
             TriggerServerEvent("QBCore:Server:SetMetaData", "thirst", QBCore.Functions.GetPlayerData().metadata["thirst"] + ThirstFill[itemName])
         end
-        TriggerServerEvent('hud:server:RelieveStress', math.random(5, 8))
+        -- TriggerServerEvent('hud:server:RelieveStress', math.random(5, 8))
     end)
 end)
 
